@@ -1,0 +1,216 @@
+.show-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+}
+
+.show-detail {
+  background-color: white;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.show-header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-bg);
+  padding: var(--spacing-3xl);
+}
+
+.show-poster {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.show-poster img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xl);
+}
+
+.no-image-large {
+  width: 100%;
+  height: 450px;
+  background-color: var(--dark-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-muted);
+  font-weight: 500;
+  font-size: var(--font-size-lg);
+  border-radius: var(--radius-md);
+}
+
+.show-info {
+  padding: var(--spacing-3xl) var(--spacing-xl);
+  color: var(--dark-text);
+  text-align: center;
+}
+
+.show-title {
+  margin: 0 0 var(--spacing-xl) 0;
+  font-size: var(--font-size-5xl);
+  font-weight: 700;
+  color: var(--dark-text);
+  line-height: 1.2;
+}
+
+.show-meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-2xl);
+  font-weight: 600;
+  margin-bottom: var(--spacing-lg);
+}
+
+.rating-star {
+  color: var(--accent-color);
+}
+
+.rating-value {
+  color: var(--dark-text);
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  text-align: center;
+}
+
+.meta-label {
+  font-weight: 600;
+  color: var(--dark-muted);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+}
+
+.show-summary {
+  padding: var(--spacing-3xl);
+  background-color: var(--secondary-color);
+}
+
+.show-summary h2 {
+  margin: 0 0 var(--spacing-xl) 0;
+  font-size: var(--font-size-3xl);
+  font-weight: 600;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--spacing-md);
+}
+
+.show-summary p {
+  margin: 0 0 var(--spacing-lg) 0;
+  line-height: 1.6;
+  color: var(--text-color);
+  font-size: var(--font-size-lg);
+}
+
+.show-summary p:last-child {
+  margin-bottom: 0;
+}
+
+.show-actions {
+  padding: var(--spacing-xl) var(--spacing-3xl);
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-2xl);
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  font-size: var(--font-size-base);
+  transition: var(--transition-base);
+}
+
+.back-button:hover {
+  background-color: var(--primary-light);
+  text-decoration: none;
+}
+
+.error-message {
+  color: var(--error-color);
+  background-color: var(--error-bg);
+  padding: var(--spacing-lg) var(--spacing-xl);
+  border-radius: var(--radius-md);
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .show-header {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .show-poster {
+    width: 40%;
+    max-width: 300px;
+    margin: 0;
+  }
+  
+  .show-info {
+    width: 60%;
+    padding: 0 var(--spacing-3xl) 0 var(--spacing-3xl);
+    text-align: left;
+  }
+  
+  .show-meta {
+    align-items: flex-start;
+  }
+  
+  .meta-item {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .meta-label {
+    min-width: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .show-detail-container {
+    padding: var(--spacing-lg);
+  }
+  
+  .show-header {
+    padding: var(--spacing-xl);
+  }
+  
+  .show-info {
+    padding: var(--spacing-xl) var(--spacing-lg);
+  }
+  
+  .show-title {
+    font-size: var(--font-size-4xl);
+  }
+  
+  .show-summary {
+    padding: var(--spacing-xl);
+  }
+  
+  .show-actions {
+    padding: var(--spacing-xl);
+  }
+}

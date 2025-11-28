@@ -1,0 +1,7 @@
+.intro-text {
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  color: var(--text-light);
+  margin: 0;
+  text-align: center;
+}

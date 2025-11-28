@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "TVMaze ShowList",
+  "name": "TVMaze ShowList - Find Your Favorite TV Shows",
   "icons": [
     {
       "src": "favicon.ico",
